@@ -15,6 +15,10 @@
       "es2018",
       "dom"
     ],
+    "types": ["node"],
+    "typeRoots": [
+      "node_modules/@types"
+      ],
     "paths": {
       "shared-lib": [
         "projects/shared-lib/src/public-api.ts",

@@ -1,11 +1,16 @@
-import { Injectable } from '@angular/core';
+import { EventEmitter, Injectable } from '@angular/core';
+import { BehaviorSubject, ReplaySubject } from 'rxjs';
+
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'platform'
 })
 export class AuthLibService {
 
   public userName: string = 'Waheed';
+  public selection = new BehaviorSubject<any>({});
+  selected: any;
+  //public selection = new EventEmitter();
 
   public get user(): string {
     return this.userName;

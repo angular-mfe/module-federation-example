@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { FLIGHTS_ROUTES } from './flights.routes';
 import { AuthLibModule } from 'auth-lib';
 import { SharedLibModule } from 'shared-lib';
+import { FlightResultsComponent } from './flight-results/flight-results.component';
 
 @NgModule({
   imports: [
@@ -14,7 +15,8 @@ import { SharedLibModule } from 'shared-lib';
     RouterModule.forChild(FLIGHTS_ROUTES)
   ],
   declarations: [
-    FlightsSearchComponent
+    FlightsSearchComponent,
+    FlightResultsComponent
   ]
 })
 export class FlightsModule { }

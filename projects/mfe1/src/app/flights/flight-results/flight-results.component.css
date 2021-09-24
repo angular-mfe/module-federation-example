@@ -1,0 +1,7 @@
+.alignbtn {
+    text-align: center;
+}
+.proceedBtn {
+    display: flex;
+    justify-content: center;
+}

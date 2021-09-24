@@ -5,7 +5,8 @@ import { AuthLibService } from 'auth-lib';
 
 @Component({
   selector: 'app-flights-search',
-  templateUrl: './flights-search.component.html'
+  templateUrl: './flights-search.component.html',
+  styleUrls: ['./flight-search.component.css']
 })
 export class FlightsSearchComponent {
   public uname = 'shell';

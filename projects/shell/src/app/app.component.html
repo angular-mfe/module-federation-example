@@ -1,8 +1,69 @@
-<ul>
+<!-- <ul>
     <li><img src="../assets/angular.png" width="50"></li>
     <li><a routerLink="/">Home</a></li>
     <li><a routerLink="/flights/flights-search">Flights</a></li>
 </ul>
 
-<router-outlet></router-outlet>
+<router-outlet></router-outlet> -->
 
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#">FLY HIGH</a>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ulist">
+                <li class="nav-item li-item" *ngFor="let menu of _menu">
+                    <!-- [routerLink]="menu.path" -->
+                    <a class="nav-link active link" routerLink="/flights/flights-search">{{
+                        menu.name
+                        }}</a>
+                </li>
+            </ul>
+            <form class="d-flex">
+                <button class="btn btn-outline-primary me-2" type="submit">
+                    Log In
+                </button>
+                <button class="btn btn-outline-primary" type="submit">Sign Up</button>
+            </form>
+        </div>
+    </div>
+</nav>
+<router-outlet></router-outlet>
+<div class="footer-clean">
+    <footer>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>About</h3>
+                    <ul>
+                        <li><a href="#">Company</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Legacy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Customer Service</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Message Us</a></li>
+                        <li><a href="#">Comment/Complaint</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 col-md-3 item">
+                    <h3>Policies</h3>
+                    <ul>
+                        <li><a href="#">Legal</a></li>
+                        <li><a href="#">Sustainabilty</a></li>
+                        <li><a href="#">Cookies, Privacy and Security</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 item social">
+                    <a href="#"><i class="fab fa-facebook icon-margin"></i></a>
+                    <a href="#"><i class="fab fa-twitter icon-margin"></i></a>
+                    <a href="#"><i class="fab fa-snapchat icon-margin"></i></a>
+                    <a href="#"><i class="fab fa-instagram icon-margin"></i></a>
+                    <p class="copyright">Fly High Air Lines, Inc. © 2021</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+  </div>

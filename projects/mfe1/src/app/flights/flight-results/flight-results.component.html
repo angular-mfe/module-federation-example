@@ -1,0 +1,30 @@
+<div class="wrapper bg-white m-5 p-2">
+    <table class="table table-striped table-bordered">
+        <thead>
+            <tr>
+                <th scope="col"></th>
+                <th scope="col">Route</th>
+                <th scope="col">Departs</th>
+                <th scope="col">Arrives</th>
+                <th scope="col">Stops</th>
+                <th scope="col">Fare</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let item of flight_list">
+            <!-- <tr *ngFor="let item of flight_list | paginate: { itemsPerPage: 10, currentPage: p }"> -->
+            <th class="alignbtn" scope="row"><input type="radio" (click)="onSelect(item)"></th>
+            <th>{{item.name}}</th>
+            <td>{{item.depart}}</td>
+            <td>{{item.arrive}}</td>
+            <td>{{item.stops}}</td>
+            <td>{{item.fare}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- <div class="proceedBtn">
+        <pagination-controls (pageChange)="p = $event"></pagination-controls>
+    </div> -->
+    <div class="proceedBtn"><button class="btn btn-outline-primary"
+            routerLink="/payment">Proceed</button></div>
+</div>
