@@ -13,8 +13,8 @@ export class PaymentComponent implements OnInit {
   constructor(private service: AuthLibService) {
     this.service.selection.subscribe((item) => {
       console.log(item);
-      // this.selection = item
-    });    
+      this.selection = [item];
+    });
    }
 
   ngOnInit(): void {

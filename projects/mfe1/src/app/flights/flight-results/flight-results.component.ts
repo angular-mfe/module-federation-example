@@ -51,8 +51,7 @@ export class FlightResultsComponent implements OnInit {
       'stops': '2',
       'fare': '$450'
     },
-  ]
-  
+  ];
 
   constructor(private service: AuthLibService) { }
 
@@ -62,7 +61,6 @@ export class FlightResultsComponent implements OnInit {
   onSelect(item) {
     this.service.selection.next(item);
     console.log(this.service.userName);
-    
   }
 
 }
