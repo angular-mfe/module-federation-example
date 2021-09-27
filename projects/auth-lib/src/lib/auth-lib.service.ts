@@ -7,10 +7,8 @@ import { BehaviorSubject, ReplaySubject } from 'rxjs';
 })
 export class AuthLibService {
 
-  public userName: string = 'Waheed';
+  public userName: string = '';
   public selection = new BehaviorSubject<any>({});
-  selected: any;
-  //public selection = new EventEmitter();
 
   public get user(): string {
     return this.userName;

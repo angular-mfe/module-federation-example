@@ -16,9 +16,6 @@ export class AppComponent {
     this.uname = this.service.userName;
     this.service.login('Max', null);
     console.debug('http', http);
-    this.service.selection.subscribe((item => this.selection = item));
-    console.log(this.selection);
-    
   }
 
   ngOnInit() {

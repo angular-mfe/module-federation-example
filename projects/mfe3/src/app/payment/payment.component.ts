@@ -8,12 +8,11 @@ import { AuthLibService } from 'auth-lib';
   styleUrls: ['./payment.component.css']
 })
 export class PaymentComponent implements OnInit {
-  selection: any;
+  selection: object[] = [];
 
   constructor(private service: AuthLibService) {
     this.service.selection.subscribe((item) => {
-      console.log(item);
-      // this.selection = item
+      this.selection.push(item)
     });    
    }
 

@@ -61,8 +61,6 @@ export class FlightResultsComponent implements OnInit {
 
   onSelect(item) {
     this.service.selection.next(item);
-    console.log(this.service.userName);
-    
   }
 
 }
