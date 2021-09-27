@@ -51,8 +51,7 @@ export class FlightResultsComponent implements OnInit {
       'stops': '2',
       'fare': '$450'
     },
-  ]
-  
+  ];
 
   constructor(private service: AuthLibService) { }
 
