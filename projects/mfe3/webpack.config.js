@@ -4,6 +4,8 @@ const path = require("path");
 const share = mf.share;
 
 const sharedMappings = new mf.SharedMappings();
+
+// Library should be added in sharedMappings.register to make it useable by the independent MFE's
 sharedMappings.register(
   path.join(__dirname, '../../tsconfig.json'),
   ['auth-lib']

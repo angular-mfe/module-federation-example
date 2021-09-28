@@ -3,7 +3,7 @@ import { Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 
-const URL1 = 'http://localhost:3000/remoteEntry.js';
+const URL1 = 'http://localhost:3500/remoteEntry.js';
 const URL2 = 'http://localhost:4000/remoteEntry.js';
 const URL3 = 'http://localhost:4500/remoteEntry.js';
 
@@ -15,7 +15,7 @@ export const APP_ROUTES: Routes = [
     // },
 
     // Your route here:
-
+    // Lazy load the microfrontends as modules
     {
       path: '',
       loadChildren: () => loadRemoteModule({
